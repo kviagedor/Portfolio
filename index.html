@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21ab90faae.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <div class="bg-image"></div>
+    <header class="header">
+        <nav class="container">
+            <a href="">
+                <img src="images/logo.png" alt="" class="logo">
+            </a>
+                <ul id="menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+        
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="box grid">
+                    <div class="box-img">
+                        <img src="images/background1" alt="">
+                    </div>
+                    <div class="box-content">
+                        <p>UI/UX Designer</p>
+                        <h1>Hi, I'm <span>Ken</span><br> from the Philippines</h1>
+                    </div>
+                </div>
+                <button class="btn get-btn">
+                    <span>Get Started</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>A skilled and versatile Python and web developer with a passion for creating innovative and user-centric web applications. Experienced in full-stack development, with expertise in Python frameworks such as Django and Flask, as well as frontend technologies including HTML, CSS, and JavaScript. Committed to delivering high-quality code and exceptional user experiences. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>Mobile App Development</span><br>Building Android and IOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>May 2016 - Present</span><br>System Administrator at ADM Animal Nutrition</li>
+                                <li><span>June 2015 – May 2016</span><br>IT STAFF at Popular Feedmill Corporation</li>
+                                <li><span>February 2012 – September 2012</span><br>Computer Aided Measuring Technician at Microsourcing Inc.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2006-2009</span><br>(BSIT) Bachelor of Science in Information Technology at University of Cebu Lapu-Lapu and Mandaue  </li>
+                                <li><span>2004-2006</span><br>(BSIT) Bachelor of Science in Information Technology at Palompon Institute of Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ---------Services-------- -->
+        <section id="services">
+            <div class="container">
+                <h1 class="sub-title">Our Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, rerum.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, rerum.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, rerum.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ----------portfolio---------- -->
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Our Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dolorum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dolorum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work3.png" alt="">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dolorum.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn">See more</a>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1><br>
+                        <p><i class="fas fa-paper-plane"></i> contact@example.com</p><br>
+                        <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Kenji. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+            </div>
+        </section>
+
+    
+
+    </main>
+
+<!-- -------about----- -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
